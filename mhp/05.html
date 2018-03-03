@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 25px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 80px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:1.6em
+}
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                   displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+05. Memory phenomenon inspected from a molecular point of view<br/><br/>
+
+<img src="https://raw.githubusercontent.com/youngmtool/neuroscience/master/pics/mhp/05-01.png"> <br/><br/>
+
+@<br/>
+neuron 은 growth cone 을 만들면서 성장, 분화한다. <br/>
+진행이 더 되면 grown neuron 은 많은 dendrite 를 만든다. 그 중 하나의 branch 는 길이가 길며 axon 이라는 branch 라고 부른다. 말단에서는 synapse 구조를 형성한다. <br/>
+dendrite 를 확대해보면 많은 spine 이 있다. <br/>
+옆에 다른 neuron 이 있다고 가정하자. <br/>
+<br/>
+@<br/>
+하나의 presynaptic membrane 을 가정하자. neurotrasmitter glutamate 가 있다고 가정하자. <br/>
+하나의 postsynaptic membrane 에 ion channel 과 receptor 들이 존재한다. neurotrasmitter glutamate 의 receptor 는 크게 두가지이다. 하나는 NMDA (N-methyl-D-aspartate) receptor 이다. 이쪽 ion channel 에서 calcium ion 이 유입된다. 그리고 다양한 분자적 현상들이 일어난다. <br/>
+먼저 AMPAR receptor 에 neurotrasmitter 에 의해 결합되고 $Na^{+}$ 가 들어온다. 그러면 안쪽이 + 가 우세해진다. 그러면 NMDA 를 가로 막고 있던 $Mg^{2+}$ 가 + 에 의해 튕겨져 나간다. 그러면 비어있는 구멍으로 $Ca^{2+}$ 가 들어오게된다. <br/>
+<br/>
+$Ca^{2+}$ 가 들어오면 첫번째로 calcium calmodulin 이랑 결합을 한다. 그러면 크게 3가지 정도의 chemical reaction 이 일어난다. <br/>
+1. CaMK2 (calcium calmodulin kinase 2) 가 activation 된다. <br/>
+1. PKC (proten kinase c) 가 activation 된다.<br/>
+1. tyrosine kinase 가 activation 된다.<br/>
+<br/>
+kinase 는 protein 에 phosphate group 을 붙여주는 enzyme 이다. <br/>
+<br/>
+CaMK2 에 의해서 signal 을 일으키는 물질인 retrograde signal 이 generation 된다. <br/>
+이 물질에 의해서 nitric oxide NO gas 가 생성된다. NO gas 는 protoplasmic membrane of cell 을 diffusion 에 의해 그냥 통과한다. NO gas 는 혈관을 확장한다. 그러면 presynaptic membrane 의 glutamate 의 분비를 촉진한다. <br/>
+<br/>
+@<br/>
+postsynaptic membrane 안쪽으로 $Ca^{2+}$ 의 양이 많아지면 cell body 를 향해서 물질들이 diffusion 된다. 먼저 adenylate cyclase 의 작용에 의해 cAMP(secondary signaling substance inside of a cell) 가 생성된다. adenosine triphosphate 를 adenylate cyclase 가 변형시켜서 cyclic molecule 로 만든 것이 cAMP (cyclic adenosine monophosphate)이다. cAMP 는 PKA(proten kinase A) 를 activation 시킨다. <br/>
+<br/>
+@<br/>
+neuron cell body 가 있다고 하자.<br/>
+DNA 를 보호하는 nucleus 가 있다. DNA 를 함부로 trascription 못하도록 혹은 trascription 을 조절하는 protein 들이 있다. CREB1 은 trascription 을 regulation 한다. CREB2 protein 은 CREB1 을 regulation 한다. <br/>
+<br/>
+PKA 가 activation 되면 nucleus 안으로 들어가서 CREB2 에 의해 regulation 되어 inactive 한 CREB1 을 activation 시킨다. 이 중간 과정에서 PKA 에 의해 stimulated 된 MAPK(mitogen activated protein kinase) enzyme 이 CREB2 를 regulate 한다. <br/>
+<br/>
+그러면 default 로 trascription 을 regulate 하고 있던 CREB1 이 activation 되면서 CREB1 이 해방되어 regulation 이 없어지면서 DNA 가 이중 나선이 풀리면서, DNA 가 인출되는, mRNA 를 만드는 과정인 trascription 이 가능해진다.<br/>
+<br/>
+@<br/>
+mRNA 는 nuclear pore 를 통해 cytoplasm 로 나온다. 단백질 합성 공장인 ribosome 이 mRNA 를 capture 하고 traslation 한다. 그리고 여기서 amino acid chain 이 생성된다. 그리고 이런게 모여서 단백질이 만들어진다. <br/>
+<br/>
+tPA(tissue plasminogen activator), BDNF(brain derived neurotrophic factor) 라는 두개의 단백질이 형성된다. <br/>
+다른 종류의 단백질은 C/EBP 단백질 이다. <br/>
+<br/>
+tPA, BDNF 에 의해 새로운 spine(presynaptic membrane and postsynaptic membrane) 이 생성된다. 그리고 맞은편 spine 도 유도작용에 의해서 생기고, 결과적으로 새로운 synapse 가 생기게 된다. <br/>
+그리고 presynaptic membrane 에는 vesicle 이 생기고 postsynaptic membrane 에서는 ion channel 이 생긴다. <br/>
+<br/>
+위에 설명한 작용이 처음에 일어날때 $Ca^{2+}$ 농도가 그리 강하지 않을 때는 postsynaptic membrane 에서 CaMK2 가 phosphate group 을 붙여줌으로써 AMPAR channel 이 조금 더 생길 수 있다. 그래서 이쪽 membrane 의 conductivity 가 enhance 된다. <br/>
+<br/>
+새로운 synapse 는 생기지 않았지만 새로운 AMAPR 가 생김으로써 conductivity 좋아지는 이러한 현상을 early LTP 라고 한다. synapse 가 생기는 현상을 late LTP 라고 한다. eric kandel 의 theory 이다. <br/>
+<br/>
+22<br/>
+ 
+ 
+   </BODY>
+</HTML>
