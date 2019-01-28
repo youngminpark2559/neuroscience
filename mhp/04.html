@@ -5,7 +5,7 @@
       <TITLE>My first HTML document</TITLE>
       <style rel="stylesheet" type="text/css">
 body {
- font-size: 25px;
+ font-size: 23px;
  
  margin-top: 50px;
     margin-bottom: 50px;
@@ -17,7 +17,10 @@ body {
     padding-right: 80px;
     padding-left: 80px;
     
-    line-height:1.6em
+    line-height:35px;
+}
+img {
+ width:900px;
 }
 </style>
       <script type="text/x-mathjax-config">
@@ -37,8 +40,8 @@ MathJax.Hub.Config({
                equationNumbers: { autoNumber: "AMS" } },
         extensions: ["tex2jax.js"],
         jax: ["input/TeX","output/HTML-CSS"],
-        tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-                   displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
                    processEscapes: true },
         "HTML-CSS": { availableFonts: ["TeX"],
                       linebreaks: { automatic: true } }
@@ -46,100 +49,251 @@ MathJax.Hub.Config({
 </script>
    </HEAD>
    <BODY>
-04. Biochemical aspects of neurons <br/><br/>
+04. Biochemical aspects of neurons 
+<xmp>
+======================================================================
+LTP(long term potentiation): 
+Generally, passed stimulus into brain are soon disappear.
 
-<img src="https://raw.githubusercontent.com/youngmtool/neuroscience/master/pics/mhp/04-01.png"> <br/><br/>
+But LTP indicates to phenomemon 
+where when stimulus worth to be remembered comes into brain,
+electric pulse of that stimulus sustains for long time (like over 10 hours).
 
-@<br/>
-LTP(long term potentiation) : 보통때는 자극이 금방 사라진다. 하지만, 기억할 만한 현상인 자극이 들어오면, 그 자극의 전압펄스가 오랫동안(예를들어, 10시간 이상) 지속되는 현상이다. 지난 30년간 neuroscience 에서 집중적으로 연구된 이 현상은 기억이라는 현상과 상관관계가 깊다는것이 거의 밝혀졌다. <br/>
-<br/>
-@<br/>
-자극이 들어오면 단백질들이 생긴다. 그러면서 spine 이 분열하는 양상을 보이다가 1시간 정도 지나면 실제로 두개로 갈라진다. <br/>
-<br/>
-@<br/>
-action potential 이 형성되어서 spine 쪽으로 오면 이쪽에는 calcium channel 들이 있다. 세포 바깥에는 calcium ion $Ca^{2+}$ 이 세포 안보다 많게는 10,000 배 정도 많다. Sodium ion 은 안보다 바깥이 10배정도 많다. Potassium ion 은 바깥보다 안쪽이 20배정도 더 많다. 세포 전체에서 많은 작용을 trigger 시켜 주는 것이 calcium 이 선택된 것이다. action potential 이 presynaptic membrane까지 도달하면 channel 을 통해 바깥에 존재하던 calcium ion 이 spine 에 들어가게 된다. 그러면 presynaptic membrane에 존재하던 vesicle 들이 막말단으로 이동한다. 그리고 synapse 로 neurotrasmitter 들을 확산으로 분비한다. 이것들이 postsynaptic membrane의 receptor 붙으면 synapse 사이에 있던 glutamate, GABA, calcium 등이 postsynaptic membrane 안으로 들어간다. 그러면 action potential 이 형성된다. <br/>
-<br/>
-@<br/>
-synapse gap 은 20 nm 이다. 200 옹스트롬이다. 수소원자의 반지름이 0.5 옹스트롬이다. 따라서 synapse gap 은 수소원자 400개 정도 들어가는 간격이다. <br/>
-<br/>
-@<br/>
-spine 의 말단을 50만배에서 200만배의 배율로 관찰할수 있는 TEM(Transmission Electon Microscope, 투과전자현미경) 으로 관찰할 수 있다. <br/>
-50만배로 Silicon 기판을 보면 atom 들의 배열이 보인다. <br/>
-spine 말단에서 많은 구멍들이 보인다. 이것들이 ion channel 이다.<br/>
-<br/>
-@<br/>
-neurotrasmitter 는 구멍 근처의 synapse 표면에 있는 receptor 에 붙는 것이다. 그러면 구멍이 열린다. 그러면 이 앞에 있던 $cl^{-}, Ca^{2+}$, glutamate, GABA 등의 분자들이 이 구멍으로 들어간다. 특히, glutamate 가 NMDA receptor 에 붙으면 $Ca^{2+}$ 이 postsynaptic membrane 안으로 들어간다. 그로 인해서 단백질들의 상호작용으로 인해 기억이 가능해진다. <br/>
-<br/>
-@<br/>
-postsynaptic membrane 에서 dark belt 가 보인다. 이 dark belt 는 PSD-95 (postsynaptic density protein 95) 라는 것으로 단백질이 mat 처럼 깔려있다. 그 위에 receptor 들이 있다. <br/>
-<br/>
-@<br/>
-기억이 좋아진다는 것의 구체적, 물리적 근거는 AMPA receptor 가 postsynaptic membrane 에 많이 삽입되는 것이다. 삽입되는 것은 단순한 반응이 아니고 많은 단백질들의 상호작용에 의해 형성된다.<br/>
-<br/>
-@<br/>
-대뇌피질의 신경세포는 약 140억개정도로 추정되고 있다. 신경세포는 10,000개 정도의 spine 을 가질 수 있다. 따라서, 신경세포 각각이 10,000 개씩 서로 연접한다고 생각하면 많은 연결이 있다고 추측할수있다.<br/>
-<br/>
-@<br/>
-대뇌피질에서 가장 많은 neurotrasmitter 는 80percent를 차지하는 흥분성인 glutamate 이다. 억제성 neurotrasmitter 는 20percent 정도를 차지하는 GABA 이다. 신경세포안쪽의 전압펄스를 점점 -로 낮게 만들어주기때문에 신경세포가 action potential 을 만들기 어렵게 만든다. <br/>
-<br/>
-@<br/>
-NMDAR, AMPAR 는 이온성 수용체이고, mGluR 은 대사성 수용체이다. <br/>
-대사성 수용체인 mGluR 은 amino acid 가 수천 수만개 연결 된 enzyme, protein 이며 membrane 을 7번 관통한다. <br/>
-<br/>
-@<br/>
-단백질들의 상호작용에 의해 receptor 가 증가하거나 감소한다. <br/>
-<br/>
-@<br/>
-NMDA receptor 에 glutamate 가 붙어 channel 이 열리면서 들어온 $Ca^{2+}$ 가 단백질들의 상호작용을 촉발시키고 결과적으로 AMPAR receptor 가 많아져 기억이 증가하게 된다. <br/>
-<br/>
-@<br/>
-GABA 와 glutamate 는 즉각적으로 분비된다. 그래서 neurotrasmitter 라고 얘기한다. <br/>
-dopamine, serotonin, noradrenalin, acetylcholine 은 neuromodulator 이라고 한다. <br/>
-neuromodulator 들은 neurotrasmitter 들이 작용할 수 있도록 분위기를 만들어 준다고 보면 된다. <br/>
-<br/>
-@<br/>
-p1<br/>
-postsynaptic membrane 이 있다. 여기 vesicle 안에 있는게 분자이다. 반대편에 postsynaptic membrane 이 있다. ion channel 들은 postsynaptic membrane 에 삽입되어 있다. 정신작용을 일으키는 chemical 들은 5-6가지만 정확히 이해하면 활용, 응용을 할수 있다. <br/>
-vesicle 에 들어 있는 분자는 dopamine(D), serotonin(5'-HT), acetylcholine(Ach: receptor 가 muscarinic receptor 와 nicotine receptor 두 가지 이다.), noradrenalin(norepinephrine, NE), adrenalin(epinephrine, E), GABA.<br/>
-<br/>
-옆에는 신경교세포(glial cell) 이 있다. 분비된 chemical 은 presynaptic membrane 으로 회수해서 쓰기도 한다. <br/>
-회수할때, dopamine 의 경우는 mitochondrial outer membrane 에서 나오는 monoamine oxidase (MAO) 에 의해서 산화가 되어 사용못하는 상태가 된다. <br/>
-synapse 에 분비되는 물질 중 MAO 와 비슷하게 동작하는 catechol-O-methyl trasferase (COMT) 에 의해서 synapse 에서 noradrenalin, dopamine, serotonin 등이 다른 물질로 바뀐다. <br/>
-<br/>
-dopamine 은 tyrosine 나왔다. 그래서 20 essential amino acid 의 한 종류인 tyrosine 의 분자구조를 그려보면 C, C, N 그리고 H 두개가 붙어서 amin 기가 된다. C 에 H 가 붙고 나머지 한군데에는 carboxyl group COOH 가 붙는다. 그리고 benzene ring 에 Hydroxy group HO 가 붙어있다. <br/>
-<br/>
-tyrosine 에서 L-DOPA 가 유도되는데 오른쪽 구조는 동일하고 Hydroxy group HO 가 하나 더 붙는다. <br/>
-<br/>
-L-DOPA 에서 decarboxylase 를 써서 carboxyl group 을 없애면 H 로 바뀌는데 이것이 dopamine 이다.<br/>
-<br/>
-dopamine 에 $\beta$-Hydroxyase enzyme 이 동작하면 noradrenalin 이 된다. <br/>
-OH 가 많아지면 생화학적으로 활발해진다. 왜냐하면 OH 기가 구조에 삽입되면 H 가 빠져나오고 양성자가 되어 많은 생화학 작용이 일어나기 때문이다. noradrenalin 은 attention 에 중요한 물질이다. <br/>
-<br/>
-noradrenalin 에 amine group 에서 proton H 가 나오고 methyl group $CH_{3}$ 가 붙으면 adrenalin 이다. <br/>
-<br/>
-@<br/>
-벤젠고리는 고리에 C 가 있고 C 에 연결된 H 가 생략되어 있다. C 는 원자가번호가 4이다. C에서 H를 떼어내면 양성자가 되고 떼어낸 곳에다 OH 를 붙인다. 이렇게 떼어내고 붙이는 반응을 protein, enzyme 이 관여한다. <br/>
-<br/>
-@<br/>
-enzyme, protein 은 열쇠와 자물쇠같은 관계인데 계속 자주 사용하면 구멍이 헐거워져서 입체 구조에 에러가 생기게 된다. 따라서, 주기적으로 단백질들을 새로 만들어 줘야 한다. <br/>
-그래서 뇌의 신경세포의 단백질들도 2주정도지나면 전부 다 새로 만들어진다. <br/>
-AMPAR channel 같은 ion channel 은 자극이 없어도 20분만 지나면 자동으로 분해가 되고 새로 만들어진다.  <br/>
-neural branch 의 growth rate 은 시간당 40 micro meter 가 자라는 40$\mu$m/h 이다. 신경세포의 크기가 20-50 micro meter 인데 branch 가 20 micro meter 기준 전체 몸체의 두배정도 길이 자랄수 있는 속도이다. <br/>
-<br/>
-ion channel 이 phospholipid bilayer 에서 이동하는 속도는 3$\mu$m/min 이다. ion channel 의 크기는 AMPAR channel 의 경우 10 $\mu$m 이다. <br/>
-<br/>
-capillary vessel 에서 red cell, 혈류의 속도는 1mm/sec 이다. \<br/>
-이러한 수치들을 안다면 생명의 dynamics 를 인지할수 있다.<br/>
-<br/>
-dopamine, serotonin, noradrenalin 같은 물질들은 어떤면에서 유독한 물질이다. 그래서 synapse gap 사이에서 있어야지 다른곳으로 유출되면 안된다. 그리고 사용된 이후에는 대부분 회수를 해서 재활용하거나 oxidation treatment 해서 insolvency treatment를 해야한다. 이러한 역할을 담당하는 물질이 COMT, MAO 등이다. <br/>
-<br/>
-COMT 의 C는 catechol 이다. catechol 은 benzene ring 에 Hydroxy group OH 가 두개 붙어 있는 dihydroxl benzene 이다. <br/>
-<br/>
-@<br/>
-따라서, neurotrasmitter 들을 catechol amine 이라는 말로 표현하기도 한다. <br/>
-<br/>
-@<br/>
-cerebellar cortex 에 purkinje cell 이 있다. 이 하나의 cell 에 spine 이 10,000 개 정도 있을 수 있다. <br/>
+This phenomemon which has been intensively researched 
+for last 30 years of neuroscience had been almost proved 
+that it has something to do with phenomemon called memory.
 
+======================================================================
+When stimulus comes in, proteins are generated.
+
+Then, phase of spine separating almost shows up.
+
+After almost 1 hour, that spine actually becomes separated into 2 ones.
+
+======================================================================
+After forming action potential, there are much calcium channle around spine.
+
+There are 10000 times of calcium ion $$$Ca^{2+}$$$ around outside of cell
+than inside of cell.
+There are 10 times of sodium ion $$$Na^{+}$$$ around outside of cell 
+than inside of cell.
+There are 20 times of potassium ion $$$K^{+}$$$ around inside of cell 
+than outside of cell.
+
+Calcium had been chosen as "trigger" 
+which triggers many and various reactions around overall cell.
+
+When action potential reaches to presynaptic membrane까지,
+calcium ion locating around outside of cell rushes into spine via calcium ion channel
+
+Then, vesicle locating in presynaptic membrane moves to end of membrane.
+Then, neurotrasmitters are released from vesicle towards synapse.
+
+If neurotrasmitters are attached onto receptors of postsynaptic membrane,
+molecules like glutamate, GABA, calcium ion are rushing 
+into inside of postsynaptic membrane.
+
+Then, action potential is formed in the end.
+
+======================================================================
+Gap distance of synapse is 20nm, in other words, 200 angstrom.
+
+Radius of atom of hydrogen is 0.5 angstrom.
+
+Therefore, 200 angstrom of synapse gap can hold 400 number of atom of hydrogen.
+
+======================================================================
+You can observe end of spine by using TEM (Transmission Electon Microscope),
+which you can see something in x500K, x2000K zoom in.
+
+If you see board of silicon in x500K zoom in, 
+you can see arrange of atom.
+
+You can see many holes at around end of spine.
+They're ion channel.
+
+======================================================================
+Importantly note that neurotrasmitter is 
+what's attached onto receptors locating in surface of synapse.
+
+Then, those holes open.
+
+Then, molecules like $$$cl^{-}, Ca^{2+}$$$, glutamate, GABA,
+which are located in around synapse gap space
+enter into those opened holes.
+
+When especially glutamate is attached onto NMDA receptor,
+$$$Ca^{2+}$$$ goes into postsynaptic membrane.
+
+Therefore, memory reaction can be possible along with mutual reactions of proteins.
+
+======================================================================
+You can see "dark belt" around postsynaptic membrane.
+
+This dark belt is known as PSD-95 (postsynaptic density protein 95)
+where proteins are laid as like mat.
+
+On that mat, there are receptors.
+
+======================================================================
+Specific and physical evidence 
+about enhacing memory is insertion of AMPA receptors 
+onto postsynaptic membrane
+
+Insertion of AMPA receptors onto postsynaptic membrane is not simple reaction
+but it's formed by mutual reaction of many proteins.
+
+======================================================================
+Number of neurons of cerebral cortex is guessed as almost 14 billion.
+
+Each neuron can have almost 10000 spines.
+
+Therefore, when you think each neuron meets other neurons 
+by using each set of 10000 spines,
+you can guess that there tons of connection in cerebral cortex 
+(not entire brain though)
+
+======================================================================
+Most abundant neurotrasmitter (which takes 80 percent of portion) in cerebral cortex is glutamate which is promotion neurotrasmitter.
+
+Inhibitory neurotrasmitter is GABA which takes 20 percent of portion.
+
+Since inhibitory neurotrasmitter GABA makes electric pulse lower and lower 
+towards negative voltage, 
+GABA makes action potential hardly happen.
+
+======================================================================
+NMDAR, AMPAR are ionic receptor.
+mGluR is metabolic receptor.
+
+Metabolic receptor mGluR is enzyme and protein 
+which is chained by thousands and 10 thousands of amino acids.
+
+mGluR pierces through membrane 7 times like sewing.
+
+======================================================================
+Based on mutual reactions from proteins, 
+number of receptors increases or decreases.
+
+======================================================================
+Glutamate is attached onto NMDA receptor,
+then channel on spines opens,
+$$$Ca^{2+}$$$ rushes into inside of synapse via above opened holes,
+promoting mutual reactions of proteins.
+
+Finally, number of AMPAR receptor increases and memory becomes enhanced.
+
+======================================================================
+GABA and glutamate are immediately relased.
+
+So, they're called neurotrasmitter.
+
+However, we call dopamine, serotonin, noradrenalin, acetylcholine as neuromodulator.
+
+You can say neuromodulator makes atmosphere 
+where neurotrasmitters can work more efficiently.
+
+======================================================================
+p1
+</xmp><img src="https://raw.githubusercontent.com/youngminpark2559/neuroscience/master/pics/mhp/2019_01_28_09%3A56%3A38.png"><xmp>
+
+There's presynaptic membrane (upper one which has vesicle)
+
+They're molecules which are containined in vesicle.
+
+In opposite direction, there is postsynaptic membrane.
+
+Ion channels (6 black dots) are inserted into postsynaptic membrane.
+
+======================================================================
+</xmp><img src="https://raw.githubusercontent.com/youngminpark2559/neuroscience/master/pics/mhp/2019_01_28_10%3A04%3A41.png"><xmp>
+
+If you grasp 5-6 chemicals, you can apply them.
+
+Molecules which are contained in vesicle are:
+- dopamine(D)
+- serotonin(5'-HT)
+- acetylcholine
+(Ach: kind of Ach receptor is 2: 
+muscarinic receptor and nicotine receptor)
+- noradrenalin(norepinephrine, NE)
+- adrenalin(epinephrine, E)
+- GABA
+
+======================================================================
+</xmp><img src="https://raw.githubusercontent.com/youngminpark2559/neuroscience/master/pics/mhp/2019_01_28_09%3A56%3A38.png"><xmp>
+
+Next to synapse on both left and right side,
+you can see glial cell.
+
+Released chemicals can be collected by presynaptic membrane again,
+(note that arrow from synapse to presynaptic membrane)
+then collected ones can be used again.
+
+When being collected, in case of dopamine,
+dopamine is oxidized by monoamine oxidase (MAO) 
+relased from mitochondrial outer membrane
+
+So that oxidized dopamine can't be used anymore.
+
+======================================================================
+There are some chemicals which are released from synapse 
+and which work in similar way like MAO.
+
+One of them is catechol-O-methyl trasferase (COMT)
+
+By COMT, noradrenalin, dopamine, serotonin are converted into other chemicals
+around synapse.
+
+======================================================================
+</xmp><img src="https://raw.githubusercontent.com/youngminpark2559/neuroscience/master/pics/mhp/2019_01_28_09%3A56%3A38.png"><xmp>
+
+Dopamine is originated from tyrosine.
+
+Tyrosine is one of 20 essential amino acid.
+
+If you draw molecular structure of tyrosine,
+you can see "amin" group based on C, C, and 2 Ns.
+
+H is attached onto C,
+remaining one location is attached by carboxyl group COOH.
+
+And hydroxy group HO is attached onto benzene ring.
+
+======================================================================
+tyrosine 에서 L-DOPA 가 유도되는데 오른쪽 구조는 동일하고 Hydroxy group HO 가 하나 더 붙는다. 
+
+L-DOPA 에서 decarboxylase 를 써서 carboxyl group 을 없애면 H 로 바뀌는데 이것이 dopamine 이다.
+
+dopamine 에 $$$\beta$$$-Hydroxyase enzyme 이 동작하면 noradrenalin 이 된다. 
+OH 가 많아지면 생화학적으로 활발해진다. 왜냐하면 OH 기가 구조에 삽입되면 H 가 빠져나오고 양성자가 되어 많은 생화학 작용이 일어나기 때문이다. noradrenalin 은 attention 에 중요한 물질이다. 
+
+noradrenalin 에 amine group 에서 proton H 가 나오고 methyl group $$$CH_{3}$$$ 가 붙으면 adrenalin 이다. 
+
+@
+벤젠고리는 고리에 C 가 있고 C 에 연결된 H 가 생략되어 있다. C 는 원자가번호가 4이다. C에서 H를 떼어내면 양성자가 되고 떼어낸 곳에다 OH 를 붙인다. 이렇게 떼어내고 붙이는 반응을 protein, enzyme 이 관여한다. 
+
+@
+enzyme, protein 은 열쇠와 자물쇠같은 관계인데 계속 자주 사용하면 구멍이 헐거워져서 입체 구조에 에러가 생기게 된다. 따라서, 주기적으로 단백질들을 새로 만들어 줘야 한다. 
+그래서 뇌의 신경세포의 단백질들도 2주정도지나면 전부 다 새로 만들어진다. 
+AMPAR channel 같은 ion channel 은 자극이 없어도 20분만 지나면 자동으로 분해가 되고 새로 만들어진다.  
+neural branch 의 growth rate 은 시간당 40 micro meter 가 자라는 40$$$\mu$$$m/h 이다. 신경세포의 크기가 20-50 micro meter 인데 branch 가 20 micro meter 기준 전체 몸체의 두배정도 길이 자랄수 있는 속도이다. 
+
+ion channel 이 phospholipid bilayer 에서 이동하는 속도는 3$$$\mu$$$m/min 이다. ion channel 의 크기는 AMPAR channel 의 경우 10 $$$\mu$$$m 이다. 
+
+capillary vessel 에서 red cell, 혈류의 속도는 1mm/sec 이다. \
+이러한 수치들을 안다면 생명의 dynamics 를 인지할수 있다.
+
+dopamine, serotonin, noradrenalin 같은 물질들은 어떤면에서 유독한 물질이다. 그래서 synapse gap 사이에서 있어야지 다른곳으로 유출되면 안된다. 그리고 사용된 이후에는 대부분 회수를 해서 재활용하거나 oxidation treatment 해서 insolvency treatment를 해야한다. 이러한 역할을 담당하는 물질이 COMT, MAO 등이다. 
+
+COMT 의 C는 catechol 이다. catechol 은 benzene ring 에 Hydroxy group OH 가 두개 붙어 있는 dihydroxl benzene 이다. 
+
+@
+따라서, neurotrasmitter 들을 catechol amine 이라는 말로 표현하기도 한다. 
+
+@
+cerebellar cortex 에 purkinje cell 이 있다. 이 하나의 cell 에 spine 이 10,000 개 정도 있을 수 있다. 
+      
+</xmp>
    </BODY>
 </HTML>
