@@ -5,7 +5,7 @@
       <TITLE>My first HTML document</TITLE>
       <style rel="stylesheet" type="text/css">
 body {
- font-size: 25px;
+ font-size: 23px;
  
  margin-top: 50px;
     margin-bottom: 50px;
@@ -17,7 +17,10 @@ body {
     padding-right: 80px;
     padding-left: 80px;
     
-    line-height:1.6em
+    line-height:35px;
+}
+img {
+ width:900px;
 }
 </style>
       <script type="text/x-mathjax-config">
@@ -37,8 +40,8 @@ MathJax.Hub.Config({
                equationNumbers: { autoNumber: "AMS" } },
         extensions: ["tex2jax.js"],
         jax: ["input/TeX","output/HTML-CSS"],
-        tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-                   displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
                    processEscapes: true },
         "HTML-CSS": { availableFonts: ["TeX"],
                       linebreaks: { automatic: true } }
@@ -46,114 +49,131 @@ MathJax.Hub.Config({
 </script>
    </HEAD>
    <BODY>
+
+<xmp>
 05. Memory phenomenon inspected from a molecular point of view<br/><br/>
 
 <img src="https://raw.githubusercontent.com/youngmtool/neuroscience/master/pics/mhp/05-01.png"> <br/><br/>
 <img src="https://raw.githubusercontent.com/youngmtool/neuroscience/master/pics/mhp/05-02.png"> <br/><br/>
 
-@<br/>
-neuron 은 growth cone 을 만들면서 성장, 분화한다. <br/>
-진행이 더 되면 grown neuron 은 많은 dendrite 를 만든다. 그 중 하나의 branch 는 길이가 길며 axon 이라는 branch 라고 부른다. 말단에서는 synapse 구조를 형성한다. <br/>
-dendrite 를 확대해보면 많은 spine 이 있다. <br/>
-옆에 다른 neuron 이 있다고 가정하자. <br/>
-<br/>
-@<br/>
-하나의 presynaptic membrane 을 가정하자. neurotrasmitter glutamate 가 있다고 가정하자. <br/>
-하나의 postsynaptic membrane 에 ion channel 과 receptor 들이 존재한다. neurotrasmitter glutamate 의 receptor 는 크게 두가지이다. 하나는 NMDA (N-methyl-D-aspartate) receptor 이다. 이쪽 ion channel 에서 calcium ion 이 유입된다. 그리고 다양한 분자적 현상들이 일어난다. <br/>
-먼저 AMPAR receptor 에 neurotrasmitter 에 의해 결합되고 $Na^{+}$ 가 들어온다. 그러면 안쪽이 + 가 우세해진다. 그러면 NMDA 를 가로 막고 있던 $Mg^{2+}$ 가 + 에 의해 튕겨져 나간다. 그러면 비어있는 구멍으로 $Ca^{2+}$ 가 들어오게된다. <br/>
-<br/>
-$Ca^{2+}$ 가 들어오면 첫번째로 calcium calmodulin 이랑 결합을 한다. 그러면 크게 3가지 정도의 chemical reaction 이 일어난다. <br/>
-1. CaMK2 (calcium calmodulin kinase 2) 가 activation 된다. <br/>
-1. PKC (protein kinase c) 가 activation 된다.<br/>
-1. tyrosine kinase 가 activation 된다.<br/>
-<br/>
-kinase 는 protein 에 phosphate group 을 붙여주는 enzyme 이다. <br/>
-<br/>
-CaMK2 에 의해서 signal 을 일으키는 물질인 retrograde signal 이 generation 된다. <br/>
-이 물질에 의해서 nitric oxide NO gas 가 생성된다. NO gas 는 protoplasmic membrane of cell 을 diffusion 에 의해 그냥 통과한다. NO gas 는 혈관을 확장한다. 그러면 presynaptic membrane 의 glutamate 의 분비를 촉진한다. <br/>
-<br/>
-@<br/>
-postsynaptic membrane 안쪽으로 $Ca^{2+}$ 의 양이 많아지면 cell body 를 향해서 물질들이 diffusion 된다. 먼저 adenylate cyclase 의 작용에 의해 cAMP(secondary signaling substance inside of a cell) 가 생성된다. adenosine triphosphate 를 adenylate cyclase 가 변형시켜서 cyclic molecule 로 만든 것이 cAMP (cyclic adenosine monophosphate)이다. cAMP 는 PKA(proten kinase A) 를 activation 시킨다. <br/>
-<br/>
-@<br/>
-neuron cell body 가 있다고 하자.<br/>
-DNA 를 보호하는 nucleus 가 있다. DNA 를 함부로 trascription 못하도록 혹은 trascription 을 조절하는 protein 들이 있다. CREB1 은 trascription 을 regulation 한다. CREB2 protein 은 CREB1 을 regulation 한다. <br/>
-<br/>
-PKA 가 activation 되면 nucleus 안으로 들어가서 CREB2 에 의해 regulation 되어 inactive 한 CREB1 을 activation 시킨다. 이 중간 과정에서 PKA 에 의해 stimulated 된 MAPK(mitogen activated protein kinase) enzyme 이 CREB2 를 regulate 한다. <br/>
-<br/>
-그러면 default 로 trascription 을 regulate 하고 있던 CREB1 이 activation 되면서 CREB1 이 해방되어 regulation 이 없어지면서 DNA 가 이중 나선이 풀리면서, DNA 가 인출되는, mRNA 를 만드는 과정인 trascription 이 가능해진다.<br/>
-<br/>
-@<br/>
-mRNA 는 nuclear pore 를 통해 cytoplasm 로 나온다. 단백질 합성 공장인 ribosome 이 mRNA 를 capture 하고 traslation 한다. 그리고 여기서 amino acid chain 이 생성된다. 그리고 이런게 모여서 단백질이 만들어진다. <br/>
-<br/>
-tPA(tissue plasminogen activator), BDNF(brain derived neurotrophic factor) 라는 두개의 단백질이 형성된다. <br/>
-다른 종류의 단백질은 C/EBP 단백질 이다. <br/>
-<br/>
-tPA, BDNF 에 의해 새로운 spine(presynaptic membrane and postsynaptic membrane) 이 생성된다. 그리고 맞은편 spine 도 유도작용에 의해서 생기고, 결과적으로 새로운 synapse 가 생기게 된다. <br/>
-그리고 presynaptic membrane 에는 vesicle 이 생기고 postsynaptic membrane 에서는 ion channel 이 생긴다. <br/>
-<br/>
-위에 설명한 작용이 처음에 일어날때 $Ca^{2+}$ 농도가 그리 강하지 않을 때는 postsynaptic membrane 에서 CaMK2 가 phosphate group 을 붙여줌으로써 AMPAR channel 이 조금 더 생길 수 있다. 그래서 이쪽 membrane 의 conductivity 가 enhance 된다. <br/>
-<br/>
-새로운 synapse 는 생기지 않았지만 새로운 AMAPR 가 생김으로써 conductivity 좋아지는 이러한 현상을 early LTP 라고 한다. synapse 가 생기는 현상을 late LTP 라고 한다. eric kandel 의 theory 이다. <br/>
-<br/>
-@<br/>
-phospholipid bilayer 인 postsynaptic membrane 에서 상호작용을 자세히 관찰해 보자.<br/>
-glutamate 를 받아들이는 receptor 들을 알아보자.<br/>
-NMDA receptor 는 $Ca^{2+}$ channel 과 연관된다. $Ca^{2+}$ 이 들어오면 AC(adenylate cyclase) 가 activation 된다. AC는 cAMP를 form 한다. cAMP 는 PKA(protein kinase a) 를 activation 한다. PKA는 glutamate 의 다른 channel 인 AMAPR receptor 를 postsynaptic membrane 에 삽입한다. AMPAR 는 vesicle 안에 있었는데 PKA 의 작용에 의해서 membrane 쪽에 더 많이 삽입 되는 것이다. <br/>
-<br/>
-$Ca^{2+}$ 는 PKC(protein kinase c) 를 activation 한다. PKC 는 PYK2 를 activation 시킨다. PYK2 는 SRC 를 activation 시킨다. SRC 는 NMDA 를 삽입한다. 그리고 PKC 는 AMPAR 를 갯수를 reduce 시킨다. <br/>
-<br/>
-$Ca^{2+}$ 는 directly PYK2 를 activation 시킨다. <br/>
-<br/>
-$Ca^{2+}$ 는 PP2B(calcineurin) 을 activation 시킨다. PP2B 는 PP1 을 activation 시킨다. PP1 은 AMPAR 를 reduce 한다.<br/>
-<br/>
-phosphatase : protein 에 phosphate group 을 tear off 한다.<br/>
-kinase : protein 에 phosphate group 을 attatch 한다.<br/>
-<br/>
-$Ca^{2+}$ 는 CaMK2(calcium calmodulin kinase 2) 를 activation 시킨다. CaMK2 는 AMPAR 를 increase 시킨다. <br/>
-<br/>
-AMPAR 가 postsynaptic membrane 에 많이 삽입 되는 현상이 기억이 증강되는 현상이다. <br/>
- <br/>
-$Ca^{2+}$ 는 RasGEF enzyme 을 activation 시킨다. RasGEF 는 Ras 로 trasformation 된다. Ras 는 PI-3K 를 activation 시킨다. PI-3K 는 AMPAR 를 increase 시킨다. Ras 는 Raf protein 을 activation 시킨다. Raf 는 MEK1, MEK2 enzymes 를 activation 시킨다. MEK1/2 는 ERK protein 을 activation 시킨다. ERK protein 은 세포 바깥에서 온 signal 을 process 한다. 결과적으로, ERK 에 의해서 nucleus 의 DNA 가 expression 된다. 또한, MEK1/2 는 spine 의형태를 변형시킨다. <br/>
-<br/>
-@<br/>
-대사성 channel 의 한 예는, 세포막을 7번 관통하는 protein 이다. 이 단백질은 receptor 로서 mGluR 이라고 부른다. 이 receptor 와 interaction 하는 Gq protein 은 PLC protein 을 activation 시킨다. PLC 는 PKC 를 activation 시킨다. PLC 는 IP3 라는 molecule 이 triggered 되서 vesicle 에 있는 $Ca^{2+}$ 를 방출하게 한다.<br/>
-<br/>
-@<br/>
-위 과정에서 Ras 를 억제하는 단백질은 SymGAP 이다.<br/>
-<br/>
-@<br/>
-cAMP 는 RapGEF protein 을 activation 시킨다. RapGEF 로 Rap 가 induced 된다. Rap 를 억제하는 protein 은 SPAR 이다. <br/>
-<br/>
-@<br/>
-기억한다는 것은 위와 같은 분자들의 반응이 계속 지속적으로 발생해야한다. 살짝, 그리고 한번만 반응이 일어나면 핵까지 과정이 진행될 수 없다. 핵까지 도달하지 못하고 synapse 에서 효율만 조금 좋아지는 early LTP 만 일어난다. early LTP 는 기억이랑 비슷한 현상이다. <br/>
-<br/>
-@<br/>
-long term potential 은 흥분되어 전압이 올라간 상태가 10시간 이상 지속되는 현상이다. $Ca^{2+}$ 의 양이 적당하면 효율만 좋아지는데 반복을 하면 반응의 물결이 핵속으로 들어가서 새로운 synapse 를 만들어 낸다. <br/>
-<br/>
-@<br/>
-기억을 잘하려면,<br/>
-1. 반복해야한다. 반복하면 PKA 가 CREB1 을 activation 시킨다. CREB1 이 activation 되기 위해서는 MAPK(mitogen activated protein kinase) 가 CREB2 를 regulation 해 줘야한다. 그러면 DNA가 expression 되서 단백질, new synapse 가 생성된다. <br/>
-1. 반복을 안해도 평생 기억에 남는 경우가 있다. 감동을 받을 때 이다. MAPK 의 작용에 의해서 신속히 CREB2 가 regulation 된다. 그러면 PKA 에 의해서 CREB1 이 신속히 동작하게 된다. 곧장 DNA를 거쳐, protein, receptor, synapse 를 만든다.<br/>
-<br/>
-kinase 는 phosphate group $PO_{4}^{-3}$ 을 protein 에 attach 해준다. protein 에 energy 를 공급해주어 protein을 activation 시킨다고 보면 된다. <br/>
-<br/>
-@<br/>
-생명현상은 단백질의 3차원 입체구조의 작용이다. <br/>
-<br/>
-@<br/>
-colon bacillus 하나에도 protein 이 대략 170 만개 있다. <br/>
-<br/>
-@<br/>
-생명은 항상성, 길항작용이다. 한쪽으로 발산만 하는 것이 아니라 어느정도 정도를 벗어나면 억제를 해준다. 모든것을 기억한다면 정상적인 생활을 할 수 없다. 따라서, 생존에 중요한 것만 기억한다. <br/>
-<br/>
-@<br/>
-GEF, GAP 를 살펴보자. <br/>
-Ras protein 은 cancer 를 일으킨다. 여기에 GDP(guanosine diphosphatea) molecule 이 붙어있다. <br/>
-GDP와 GTP 를 relapce 하는 GEF 가 동작해서 Ras protein 에서 GTP 로 바뀐다. 과정은 먼저 GDP 가 빠져나오고 새로운 GTP 가 들어가야한다. <br/>
-GTP 에서 GDP 로 바꿀때는 GAP 가 동작한다. 바뀌는 과정에서 phosphate group $PO_{4}^{-3}$ 가 빠져나온다. <br/>
-이것은 일종의 스위치이며 이것에 의존해서 위의 과정들이 동작하게 된다. <br/>
-스위치가 계속 켜져있으면 계속 세포가 증식하는 cancer 로 바뀌기도 한다.<br/>
-      
-   </BODY>
+======================================================================
+neuron 은 growth cone 을 만들면서 성장, 분화한다. 
+진행이 더 되면 grown neuron 은 많은 dendrite 를 만든다. 그 중 하나의 branch 는 길이가 길며 axon 이라는 branch 라고 부른다. 말단에서는 synapse 구조를 형성한다. 
+dendrite 를 확대해보면 많은 spine 이 있다. 
+옆에 다른 neuron 이 있다고 가정하자. 
+
+======================================================================
+하나의 presynaptic membrane 을 가정하자. neurotrasmitter glutamate 가 있다고 가정하자. 
+하나의 postsynaptic membrane 에 ion channel 과 receptor 들이 존재한다. neurotrasmitter glutamate 의 receptor 는 크게 두가지이다. 하나는 NMDA (N-methyl-D-aspartate) receptor 이다. 이쪽 ion channel 에서 calcium ion 이 유입된다. 그리고 다양한 분자적 현상들이 일어난다. 
+먼저 AMPAR receptor 에 neurotrasmitter 에 의해 결합되고 $$$Na^{+}$$$ 가 들어온다. 그러면 안쪽이 + 가 우세해진다. 그러면 NMDA 를 가로 막고 있던 $$$Mg^{2+}$$$ 가 + 에 의해 튕겨져 나간다. 그러면 비어있는 구멍으로 $$$Ca^{2+}$$$ 가 들어오게된다. 
+
+$$$Ca^{2+}$$$ 가 들어오면 첫번째로 calcium calmodulin 이랑 결합을 한다. 그러면 크게 3가지 정도의 chemical reaction 이 일어난다. 
+1. CaMK2 (calcium calmodulin kinase 2) 가 activation 된다. 
+1. PKC (protein kinase c) 가 activation 된다.
+1. tyrosine kinase 가 activation 된다.
+
+kinase is enzyme which attaches the phosphate group onto proteins.
+
+The material of a retrograde signal which creates the signal is generated by CaMK2.
+The nitric oxide NO gas is generated by the retrograde signal.
+NO gas can be directly passed through protoplasmic membrane of cell as the diffusion mechanism.
+Then, NO gas expands the blood veins.
+Then, that environment promotes release of glutamate in the presynaptic membrane.
+
+======================================================================
+postsynaptic membrane 안쪽으로 $$$Ca^{2+}$$$ 의 양이 많아지면 cell body 를 향해서 물질들이 diffusion 된다. 먼저 adenylate cyclase 의 작용에 의해 cAMP(secondary signaling substance inside of a cell) 가 생성된다. adenosine triphosphate 를 adenylate cyclase 가 변형시켜서 cyclic molecule 로 만든 것이 cAMP (cyclic adenosine monophosphate)이다. cAMP 는 PKA(proten kinase A) 를 activation 시킨다. 
+
+======================================================================
+neuron cell body 가 있다고 하자.
+DNA 를 보호하는 nucleus 가 있다. DNA 를 함부로 trascription 못하도록 혹은 trascription 을 조절하는 protein 들이 있다. CREB1 은 trascription 을 regulation 한다. CREB2 protein 은 CREB1 을 regulation 한다. 
+
+PKA 가 activation 되면 nucleus 안으로 들어가서 CREB2 에 의해 regulation 되어 inactive 한 CREB1 을 activation 시킨다. 이 중간 과정에서 PKA 에 의해 stimulated 된 MAPK(mitogen activated protein kinase) enzyme 이 CREB2 를 regulate 한다. 
+
+그러면 default 로 trascription 을 regulate 하고 있던 CREB1 이 activation 되면서 CREB1 이 해방되어 regulation 이 없어지면서 DNA 가 이중 나선이 풀리면서, DNA 가 인출되는, mRNA 를 만드는 과정인 trascription 이 가능해진다.
+
+======================================================================
+mRNA 는 nuclear pore 를 통해 cytoplasm 로 나온다. 단백질 합성 공장인 ribosome 이 mRNA 를 capture 하고 traslation 한다. 그리고 여기서 amino acid chain 이 생성된다. 그리고 이런게 모여서 단백질이 만들어진다. 
+
+tPA(tissue plasminogen activator), BDNF(brain derived neurotrophic factor) 라는 두개의 단백질이 형성된다. 
+다른 종류의 단백질은 C/EBP 단백질 이다. 
+
+tPA, BDNF 에 의해 새로운 spine(presynaptic membrane and postsynaptic membrane) 이 생성된다. 그리고 맞은편 spine 도 유도작용에 의해서 생기고, 결과적으로 새로운 synapse 가 생기게 된다. 
+그리고 presynaptic membrane 에는 vesicle 이 생기고 postsynaptic membrane 에서는 ion channel 이 생긴다. 
+
+위에 설명한 작용이 처음에 일어날때 $$$Ca^{2+}$$$ 농도가 그리 강하지 않을 때는 postsynaptic membrane 에서 CaMK2 가 phosphate group 을 붙여줌으로써 AMPAR channel 이 조금 더 생길 수 있다. 그래서 이쪽 membrane 의 conductivity 가 enhance 된다. 
+
+새로운 synapse 는 생기지 않았지만 새로운 AMAPR 가 생김으로써 conductivity 좋아지는 이러한 현상을 early LTP 라고 한다. synapse 가 생기는 현상을 late LTP 라고 한다. eric kandel 의 theory 이다. 
+
+======================================================================
+phospholipid bilayer 인 postsynaptic membrane 에서 상호작용을 자세히 관찰해 보자.
+glutamate 를 받아들이는 receptor 들을 알아보자.
+NMDA receptor 는 $$$Ca^{2+}$$$ channel 과 연관된다. $$$Ca^{2+}$$$ 이 들어오면 AC(adenylate cyclase) 가 activation 된다. AC는 cAMP를 form 한다. cAMP 는 PKA(protein kinase a) 를 activation 한다. PKA는 glutamate 의 다른 channel 인 AMAPR receptor 를 postsynaptic membrane 에 삽입한다. AMPAR 는 vesicle 안에 있었는데 PKA 의 작용에 의해서 membrane 쪽에 더 많이 삽입 되는 것이다. 
+
+$$$Ca^{2+}$$$ 는 PKC(protein kinase c) 를 activation 한다. PKC 는 PYK2 를 activation 시킨다. PYK2 는 SRC 를 activation 시킨다. SRC 는 NMDA 를 삽입한다. 그리고 PKC 는 AMPAR 를 갯수를 reduce 시킨다. 
+
+$$$Ca^{2+}$$$ 는 directly PYK2 를 activation 시킨다. 
+
+$$$Ca^{2+}$$$ 는 PP2B(calcineurin) 을 activation 시킨다. PP2B 는 PP1 을 activation 시킨다. PP1 은 AMPAR 를 reduce 한다.
+
+phosphatase : protein 에 phosphate group 을 tear off 한다.
+kinase : protein 에 phosphate group 을 attatch 한다.
+
+$$$Ca^{2+}$$$ 는 CaMK2(calcium calmodulin kinase 2) 를 activation 시킨다. CaMK2 는 AMPAR 를 increase 시킨다. 
+
+AMPAR 가 postsynaptic membrane 에 많이 삽입 되는 현상이 기억이 증강되는 현상이다. 
+ 
+$$$Ca^{2+}$$$ 는 RasGEF enzyme 을 activation 시킨다. RasGEF 는 Ras 로 trasformation 된다. Ras 는 PI-3K 를 activation 시킨다. PI-3K 는 AMPAR 를 increase 시킨다. Ras 는 Raf protein 을 activation 시킨다. Raf 는 MEK1, MEK2 enzymes 를 activation 시킨다. MEK1/2 는 ERK protein 을 activation 시킨다. ERK protein 은 세포 바깥에서 온 signal 을 process 한다. 결과적으로, ERK 에 의해서 nucleus 의 DNA 가 expression 된다. 또한, MEK1/2 는 spine 의형태를 변형시킨다. 
+
+======================================================================
+대사성 channel 의 한 예는, 세포막을 7번 관통하는 protein 이다. 이 단백질은 receptor 로서 mGluR 이라고 부른다. 이 receptor 와 interaction 하는 Gq protein 은 PLC protein 을 activation 시킨다. PLC 는 PKC 를 activation 시킨다. PLC 는 IP3 라는 molecule 이 triggered 되서 vesicle 에 있는 $$$Ca^{2+}$$$ 를 방출하게 한다.
+
+======================================================================
+In above steps, the protein which regulates Ras is SymGAP.
+
+======================================================================
+cAMP activates RapGEF protein.
+Rap is induced from RapGEF protein.
+A protein which regulates Rap is SPAR.
+
+======================================================================
+기억한다는 것은 위와 같은 분자들의 반응이 계속 지속적으로 발생해야한다. 살짝, 그리고 한번만 반응이 일어나면 핵까지 과정이 진행될 수 없다. 핵까지 도달하지 못하고 synapse 에서 효율만 조금 좋아지는 early LTP 만 일어난다. early LTP 는 기억이랑 비슷한 현상이다. 
+
+======================================================================
+long term potential 은 흥분되어 전압이 올라간 상태가 10시간 이상 지속되는 현상이다. $$$Ca^{2+}$$$ 의 양이 적당하면 효율만 좋아지는데 반복을 하면 반응의 물결이 핵속으로 들어가서 새로운 synapse 를 만들어 낸다. 
+
+======================================================================
+To have a better momery,
+1. You need a repeat. 
+The repeat activates CREB1 by PKA.
+To CREB1 be activated, MAPK (mitogen activated protein kinase) needs to regulate CREB2.
+Then, DNA is expressed, resulting in generation of proteins and new synapses.
+
+2. There is a case where you memorize something forever without a repeat. 
+And it's when you get an emotional impression.
+In this situation, CREB2 is instantly regulated by the action of MAPK.
+Then, CREB1 can immediately act by action of PKA.
+It means you directly go to DNA, then, you create preteins, receptors, and synapses.
+
+The Kinase attaches phosphate group $$$PO_{4}^{-3}$$$ onto proteins.
+It means Kinase supplies the energy to proteins, so that proteins get activated.
+
+======================================================================
+생명현상은 단백질의 3차원 입체구조의 작용이다. 
+
+======================================================================
+colon bacillus 하나에도 protein 이 대략 170 만개 있다. 
+
+======================================================================
+생명은 항상성, 길항작용이다. 한쪽으로 발산만 하는 것이 아니라 어느정도 정도를 벗어나면 억제를 해준다. 모든것을 기억한다면 정상적인 생활을 할 수 없다. 따라서, 생존에 중요한 것만 기억한다. 
+
+======================================================================
+GEF, GAP 를 살펴보자. 
+Ras protein 은 cancer 를 일으킨다. 여기에 GDP(guanosine diphosphatea) molecule 이 붙어있다. 
+GDP와 GTP 를 relapce 하는 GEF 가 동작해서 Ras protein 에서 GTP 로 바뀐다. 과정은 먼저 GDP 가 빠져나오고 새로운 GTP 가 들어가야한다. 
+GTP 에서 GDP 로 바꿀때는 GAP 가 동작한다. 바뀌는 과정에서 phosphate group $$$PO_{4}^{-3}$$$ 가 빠져나온다. 
+이것은 일종의 스위치이며 이것에 의존해서 위의 과정들이 동작하게 된다. 
+스위치가 계속 켜져있으면 계속 세포가 증식하는 cancer 로 바뀌기도 한다.
+
+</xmp>
+</BODY>
 </HTML>
